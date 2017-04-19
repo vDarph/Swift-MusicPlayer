@@ -11,7 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    var audioPlayer = AVAudioPlayer()
+    var audioPlayer:AVAudioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +21,15 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let music = Bundle.main.path(forResource: "Led Zeppelin - ImmigrantSong", ofType: "mp3")
+        
         do {
-            
-            try audioPlayer = AVAudioPlayer(contentsOf: NSURL(string: music!) as! URL)
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
-            try AVAudioSession.sharedInstance().setActive(true)
+            let musicPath = Bundle.main.path(forResource: "Song", ofType: "mp3")
+            try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: musicPath!) as URL)
         }
         catch{
-            print(error)
+            print("error")
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,10 +38,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func playButton(_ sender: UIButton) {
-        
         print("play tapped")
         audioPlayer.play()
-        
     }
 
 }

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,28 +21,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tJP-gI-av8">
+                                <rect key="frame" x="39" y="572" width="297" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAQ-16-mP1">
-                                <rect key="frame" x="123.5" y="269.5" width="128" height="128"/>
+                                <rect key="frame" x="155" y="184" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="OLy-94-smG"/>
+                                    <constraint firstAttribute="width" constant="64" id="uek-ic-SL2"/>
+                                </constraints>
                                 <state key="normal" image="play"/>
                                 <connections>
                                     <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9T-XN-KD4"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tJP-gI-av8">
-                                <rect key="frame" x="39" y="572" width="297" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dAQ-16-mP1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MDV-MA-VPM"/>
-                            <constraint firstItem="dAQ-16-mP1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQS-A6-UYc"/>
+                            <constraint firstItem="dAQ-16-mP1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bDa-uY-EtY"/>
+                            <constraint firstItem="dAQ-16-mP1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="gbe-0x-Wa3"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="207"/>
+            <point key="canvasLocation" x="452" y="206.44677661169416"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m9P-Q0-qc6">
@@ -64,7 +67,7 @@
         <!--Home-->
         <scene sceneID="snb-mJ-lMQ">
             <objects>
-                <viewController id="nwQ-eg-hBx" userLabel="Home" sceneMemberID="viewController">
+                <viewController id="nwQ-eg-hBx" userLabel="Home" customClass="HomeViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9uQ-mk-bwc"/>
                         <viewControllerLayoutGuide type="bottom" id="01U-Xt-aNM"/>
@@ -74,9 +77,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWT-kO-bN6">
-                                <rect key="frame" x="59" y="309" width="252" height="48"/>
+                                <rect key="frame" x="62.5" y="330" width="250" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.9339964376377341" blue="0.7276331168704282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="CLICK TO PLAY THE SONG!">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Fhc-q6-ofd"/>
+                                    <constraint firstAttribute="height" constant="50" id="m2W-m4-cgU"/>
+                                </constraints>
+                                <state key="normal" title="Immigrant Song">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -86,12 +93,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="nWT-kO-bN6" secondAttribute="bottom" constant="310" id="6B3-KW-oel"/>
-                            <constraint firstItem="nWT-kO-bN6" firstAttribute="top" secondItem="eco-3a-ZPU" secondAttribute="topMargin" constant="309" id="L5D-3y-XZM"/>
-                            <constraint firstItem="nWT-kO-bN6" firstAttribute="centerY" secondItem="eco-3a-ZPU" secondAttribute="centerY" id="O36-Iv-OdI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nWT-kO-bN6" secondAttribute="trailing" constant="48" id="Qvz-M5-4WZ"/>
-                            <constraint firstItem="nWT-kO-bN6" firstAttribute="centerX" secondItem="eco-3a-ZPU" secondAttribute="centerX" constant="-2.5" id="VXL-Wp-zqd"/>
-                            <constraint firstItem="nWT-kO-bN6" firstAttribute="leading" secondItem="eco-3a-ZPU" secondAttribute="leadingMargin" constant="43" id="nsJ-Qd-0M1"/>
+                            <constraint firstItem="nWT-kO-bN6" firstAttribute="centerX" secondItem="eco-3a-ZPU" secondAttribute="centerX" id="NtC-Dk-hiP"/>
+                            <constraint firstItem="nWT-kO-bN6" firstAttribute="top" secondItem="9uQ-mk-bwc" secondAttribute="bottom" constant="266" id="wXv-Rv-MuA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="M1N-9I-KvL"/>

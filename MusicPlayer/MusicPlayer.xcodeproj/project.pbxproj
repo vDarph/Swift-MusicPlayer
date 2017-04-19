@@ -15,7 +15,8 @@
 		1F3D43F61EA609D900A1443D /* MusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D43F51EA609D900A1443D /* MusicPlayerTests.swift */; };
 		1F3D44011EA609D900A1443D /* MusicPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D44001EA609D900A1443D /* MusicPlayerUITests.swift */; };
 		1F760E491EA627C400E27509 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F760E481EA627C400E27509 /* AVFoundation.framework */; };
-		1FCDA7ED1EA76141001D56F9 /* Led Zeppelin - Immigrant Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FCDA7EC1EA76141001D56F9 /* Led Zeppelin - Immigrant Song.mp3 */; };
+		1FCDA7ED1EA76141001D56F9 /* Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FCDA7EC1EA76141001D56F9 /* Song.mp3 */; };
+		1FCDA7F11EA77323001D56F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDA7F01EA77323001D56F9 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,8 @@
 		1F3D44001EA609D900A1443D /* MusicPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerUITests.swift; sourceTree = "<group>"; };
 		1F3D44021EA609D900A1443D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F760E481EA627C400E27509 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		1FCDA7EC1EA76141001D56F9 /* Led Zeppelin - Immigrant Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Led Zeppelin - Immigrant Song.mp3"; path = "Assets.xcassets/Led Zeppelin - Immigrant Song.mp3"; sourceTree = "<group>"; };
+		1FCDA7EC1EA76141001D56F9 /* Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Song.mp3; path = Assets.xcassets/Song.mp3; sourceTree = "<group>"; };
+		1FCDA7F01EA77323001D56F9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +105,12 @@
 		1F3D43DF1EA609D900A1443D /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				1FCDA7F01EA77323001D56F9 /* HomeViewController.swift */,
 				1F3D43E01EA609D900A1443D /* AppDelegate.swift */,
 				1F3D43E21EA609D900A1443D /* ViewController.swift */,
 				1F3D43E41EA609D900A1443D /* Main.storyboard */,
+				1FCDA7EC1EA76141001D56F9 /* Song.mp3 */,
 				1F3D43E71EA609D900A1443D /* Assets.xcassets */,
-				1FCDA7EC1EA76141001D56F9 /* Led Zeppelin - Immigrant Song.mp3 */,
 				1F3D43E91EA609D900A1443D /* LaunchScreen.storyboard */,
 				1F3D43EC1EA609D900A1443D /* Info.plist */,
 			);
@@ -248,7 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3D43EB1EA609D900A1443D /* LaunchScreen.storyboard in Resources */,
-				1FCDA7ED1EA76141001D56F9 /* Led Zeppelin - Immigrant Song.mp3 in Resources */,
+				1FCDA7ED1EA76141001D56F9 /* Song.mp3 in Resources */,
 				1F3D43E81EA609D900A1443D /* Assets.xcassets in Resources */,
 				1F3D43E61EA609D900A1443D /* Main.storyboard in Resources */,
 			);
@@ -277,6 +280,7 @@
 			files = (
 				1F3D43E31EA609D900A1443D /* ViewController.swift in Sources */,
 				1F3D43E11EA609D900A1443D /* AppDelegate.swift in Sources */,
+				1FCDA7F11EA77323001D56F9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
