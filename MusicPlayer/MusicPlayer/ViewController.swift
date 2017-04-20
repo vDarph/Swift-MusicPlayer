@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     var audioPlayer:AVAudioPlayer = AVAudioPlayer()
+    @IBOutlet weak var timeSlider: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +22,11 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        var song:Model = Model();
+        song.songFile = "Immigrant Song"
         
         do {
-            let musicPath = Bundle.main.path(forResource: "Song", ofType: "mp3")
+            let musicPath = Bundle.main.path(forResource: song.songFile, ofType: "mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: musicPath!) as URL)
         }
         catch{
@@ -41,6 +44,8 @@ class ViewController: UIViewController {
         print("play tapped")
         audioPlayer.play()
     }
-
+    
+    
 }
+
 
