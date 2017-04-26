@@ -18,10 +18,11 @@ class Model: NSObject {
         
         super.init()
     }
-    init(title:String,artist:String,album:String) {
+    init(title:String,artist:String,album:String,file:String) {
         self.songTitle = title
         self.songArtist = artist
         self.songAlbum = album
+        self.songFile = file
     }
     
     class func generateModelArray() -> [Model]{
@@ -31,16 +32,40 @@ class Model: NSObject {
             var name = ""
             var artist = ""
             var album = ""
+            var file = ""
             
             switch i {
             case 0:
-                name = ""
-                artist = ""
-                album = ""
+                name = "Immigrant Song"
+                artist = "Led Zeppelin"
+                album = "Led Zeppelin III"
+                file = "01"
+                break
+                
+            case 1:
+                name = "Feel Good Inc."
+                artist = "Gorillaz"
+                album = "Demon Days"
+                file = "02"
+                break
+                
+            case 2:
+                name = "Catgroove"
+                artist = "Parov Stelar"
+                album = "Coco"
+                file = "03"
+                break
+                
+            case 3:
+                name = "Love Will Tear Us Apart"
+                artist = "Joy Division"
+                album = "The Peel Sessions"
+                file = "04"
+                break
             default:
                 break
             }
-        let  song:Model = Model(title: name, artist: artist, album: album)
+            let  song:Model = Model(title: name, artist: artist, album: album, file: file)
         
             modelArray.append(song)
         }

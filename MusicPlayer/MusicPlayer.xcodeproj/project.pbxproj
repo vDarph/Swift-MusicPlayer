@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F0DE7581EA8EAA3005D6FFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0DE7571EA8EAA3005D6FFF /* Assets.xcassets */; };
 		1F0DE75B1EA8EAEE005D6FFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0DE7591EA8EAEE005D6FFF /* Main.storyboard */; };
 		1F0DE75D1EA90849005D6FFF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DE75C1EA90849005D6FFF /* Model.swift */; };
 		1F3D43E11EA609D900A1443D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D43E01EA609D900A1443D /* AppDelegate.swift */; };
@@ -15,9 +14,13 @@
 		1F3D43EB1EA609D900A1443D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3D43E91EA609D900A1443D /* LaunchScreen.storyboard */; };
 		1F3D43F61EA609D900A1443D /* MusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D43F51EA609D900A1443D /* MusicPlayerTests.swift */; };
 		1F3D44011EA609D900A1443D /* MusicPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3D44001EA609D900A1443D /* MusicPlayerUITests.swift */; };
-		1F760E491EA627C400E27509 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F760E481EA627C400E27509 /* AVFoundation.framework */; };
-		1FCDA7ED1EA76141001D56F9 /* Immigrant Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FCDA7EC1EA76141001D56F9 /* Immigrant Song.mp3 */; };
+		1FCDA7ED1EA76141001D56F9 /* 0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FCDA7EC1EA76141001D56F9 /* 0.mp3 */; };
 		1FCDA7F11EA77323001D56F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDA7F01EA77323001D56F9 /* HomeViewController.swift */; };
+		1FE69F3E1EB0C2D80031B15E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F3D1EB0C2D80031B15E /* Assets.xcassets */; };
+		1FE69F401EB0CCD80031B15E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE69F3F1EB0CCD80031B15E /* MediaPlayer.framework */; };
+		1FE69F421EB0D7AC0031B15E /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F411EB0D7AC0031B15E /* 1.mp3 */; };
+		1FE69F441EB0D9110031B15E /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F431EB0D9110031B15E /* 2.mp3 */; };
+		1FE69F461EB0D9BB0031B15E /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F451EB0D9BB0031B15E /* 3.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F0DE7571EA8EAA3005D6FFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F0DE75A1EA8EAEE005D6FFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F0DE75C1EA90849005D6FFF /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../Model.swift; sourceTree = "<group>"; };
 		1F3D43DD1EA609D900A1443D /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,8 +55,13 @@
 		1F3D44001EA609D900A1443D /* MusicPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerUITests.swift; sourceTree = "<group>"; };
 		1F3D44021EA609D900A1443D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F760E481EA627C400E27509 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		1FCDA7EC1EA76141001D56F9 /* Immigrant Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Immigrant Song.mp3"; path = "Assets.xcassets/Immigrant Song.mp3"; sourceTree = "<group>"; };
+		1FCDA7EC1EA76141001D56F9 /* 0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 0.mp3; path = Assets.xcassets/0.mp3; sourceTree = "<group>"; };
 		1FCDA7F01EA77323001D56F9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1FE69F3D1EB0C2D80031B15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FE69F3F1EB0CCD80031B15E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1FE69F411EB0D7AC0031B15E /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 1.mp3; path = ../../../Downloads/1.mp3; sourceTree = "<group>"; };
+		1FE69F431EB0D9110031B15E /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 2.mp3; path = ../../../Downloads/2.mp3; sourceTree = "<group>"; };
+		1FE69F451EB0D9BB0031B15E /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 3.mp3; path = ../../../Downloads/3.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F760E491EA627C400E27509 /* AVFoundation.framework in Frameworks */,
+				1FE69F401EB0CCD80031B15E /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,8 +119,11 @@
 				1F3D43E01EA609D900A1443D /* AppDelegate.swift */,
 				1F3D43E21EA609D900A1443D /* ViewController.swift */,
 				1F0DE7591EA8EAEE005D6FFF /* Main.storyboard */,
-				1F0DE7571EA8EAA3005D6FFF /* Assets.xcassets */,
-				1FCDA7EC1EA76141001D56F9 /* Immigrant Song.mp3 */,
+				1FE69F3D1EB0C2D80031B15E /* Assets.xcassets */,
+				1FCDA7EC1EA76141001D56F9 /* 0.mp3 */,
+				1FE69F411EB0D7AC0031B15E /* 1.mp3 */,
+				1FE69F431EB0D9110031B15E /* 2.mp3 */,
+				1FE69F451EB0D9BB0031B15E /* 3.mp3 */,
 				1F3D43E91EA609D900A1443D /* LaunchScreen.storyboard */,
 				1F3D43EC1EA609D900A1443D /* Info.plist */,
 			);
@@ -141,6 +151,7 @@
 		1F760E471EA627C400E27509 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FE69F3F1EB0CCD80031B15E /* MediaPlayer.framework */,
 				1F760E481EA627C400E27509 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -254,9 +265,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3D43EB1EA609D900A1443D /* LaunchScreen.storyboard in Resources */,
-				1F0DE7581EA8EAA3005D6FFF /* Assets.xcassets in Resources */,
-				1FCDA7ED1EA76141001D56F9 /* Immigrant Song.mp3 in Resources */,
+				1FE69F441EB0D9110031B15E /* 2.mp3 in Resources */,
+				1FCDA7ED1EA76141001D56F9 /* 0.mp3 in Resources */,
+				1FE69F3E1EB0C2D80031B15E /* Assets.xcassets in Resources */,
 				1F0DE75B1EA8EAEE005D6FFF /* Main.storyboard in Resources */,
+				1FE69F461EB0D9BB0031B15E /* 3.mp3 in Resources */,
+				1FE69F421EB0D7AC0031B15E /* 1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

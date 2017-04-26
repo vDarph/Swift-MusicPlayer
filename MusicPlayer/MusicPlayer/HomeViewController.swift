@@ -22,17 +22,26 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
         
+        let defaults = UserDefaults.standard
+        defaults.set(indexPath.row, forKey: "selectedSong")
+        defaults.synchronize()
+        
+        self.performSegue(withIdentifier: "mostraCanzoneSegue", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 5
+       return songCollection.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "songPlace")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "songPlace")
         
-        cell?.textLabel?.text = "r"
+        let riga:Model = songCollection[indexPath.row]
+        
+        cell?.textLabel?.text = riga.songTitle
+                cell?.detailTextLabel?.text = riga.songArtist
         
         return cell!
     }
