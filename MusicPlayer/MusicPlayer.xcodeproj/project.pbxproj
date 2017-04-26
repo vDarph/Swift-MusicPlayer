@@ -18,9 +18,9 @@
 		1FCDA7F11EA77323001D56F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCDA7F01EA77323001D56F9 /* HomeViewController.swift */; };
 		1FE69F3E1EB0C2D80031B15E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F3D1EB0C2D80031B15E /* Assets.xcassets */; };
 		1FE69F401EB0CCD80031B15E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE69F3F1EB0CCD80031B15E /* MediaPlayer.framework */; };
-		1FE69F421EB0D7AC0031B15E /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F411EB0D7AC0031B15E /* 1.mp3 */; };
-		1FE69F441EB0D9110031B15E /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F431EB0D9110031B15E /* 2.mp3 */; };
-		1FE69F461EB0D9BB0031B15E /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F451EB0D9BB0031B15E /* 3.mp3 */; };
+		1FE69F4A1EB0F6FA0031B15E /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F471EB0F6FA0031B15E /* 1.mp3 */; };
+		1FE69F4B1EB0F6FA0031B15E /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F481EB0F6FA0031B15E /* 2.mp3 */; };
+		1FE69F4C1EB0F6FA0031B15E /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F491EB0F6FA0031B15E /* 3.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,9 +59,9 @@
 		1FCDA7F01EA77323001D56F9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1FE69F3D1EB0C2D80031B15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FE69F3F1EB0CCD80031B15E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		1FE69F411EB0D7AC0031B15E /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 1.mp3; path = ../../../Downloads/1.mp3; sourceTree = "<group>"; };
-		1FE69F431EB0D9110031B15E /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 2.mp3; path = ../../../Downloads/2.mp3; sourceTree = "<group>"; };
-		1FE69F451EB0D9BB0031B15E /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 3.mp3; path = ../../../Downloads/3.mp3; sourceTree = "<group>"; };
+		1FE69F471EB0F6FA0031B15E /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 1.mp3; path = Assets.xcassets/1.mp3; sourceTree = "<group>"; };
+		1FE69F481EB0F6FA0031B15E /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 2.mp3; path = Assets.xcassets/2.mp3; sourceTree = "<group>"; };
+		1FE69F491EB0F6FA0031B15E /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 3.mp3; path = Assets.xcassets/3.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +121,9 @@
 				1F0DE7591EA8EAEE005D6FFF /* Main.storyboard */,
 				1FE69F3D1EB0C2D80031B15E /* Assets.xcassets */,
 				1FCDA7EC1EA76141001D56F9 /* 0.mp3 */,
-				1FE69F411EB0D7AC0031B15E /* 1.mp3 */,
-				1FE69F431EB0D9110031B15E /* 2.mp3 */,
-				1FE69F451EB0D9BB0031B15E /* 3.mp3 */,
+				1FE69F471EB0F6FA0031B15E /* 1.mp3 */,
+				1FE69F481EB0F6FA0031B15E /* 2.mp3 */,
+				1FE69F491EB0F6FA0031B15E /* 3.mp3 */,
 				1F3D43E91EA609D900A1443D /* LaunchScreen.storyboard */,
 				1F3D43EC1EA609D900A1443D /* Info.plist */,
 			);
@@ -265,12 +265,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3D43EB1EA609D900A1443D /* LaunchScreen.storyboard in Resources */,
-				1FE69F441EB0D9110031B15E /* 2.mp3 in Resources */,
+				1FE69F4C1EB0F6FA0031B15E /* 3.mp3 in Resources */,
 				1FCDA7ED1EA76141001D56F9 /* 0.mp3 in Resources */,
 				1FE69F3E1EB0C2D80031B15E /* Assets.xcassets in Resources */,
+				1FE69F4B1EB0F6FA0031B15E /* 2.mp3 in Resources */,
 				1F0DE75B1EA8EAEE005D6FFF /* Main.storyboard in Resources */,
-				1FE69F461EB0D9BB0031B15E /* 3.mp3 in Resources */,
-				1FE69F421EB0D7AC0031B15E /* 1.mp3 in Resources */,
+				1FE69F4A1EB0F6FA0031B15E /* 1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
