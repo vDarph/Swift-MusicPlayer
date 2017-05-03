@@ -12,16 +12,18 @@ class Model: NSObject {
     var songTitle:String = ""
     var songArtist:String = ""
     var songAlbum:String = ""
+    var songCover:UIImage!
     var songFile:String = ""
     
     override init() {
         
         super.init()
     }
-    init(title:String,artist:String,album:String,file:String) {
+    init(title:String,artist:String,album:String,cover:UIImage,file:String) {
         self.songTitle = title
         self.songArtist = artist
         self.songAlbum = album
+        self.songCover = cover
         self.songFile = file
     }
     
@@ -32,6 +34,7 @@ class Model: NSObject {
             var name = ""
             var artist = ""
             var album = ""
+            var cover = UIImage()
             var file = ""
             
             switch i {
@@ -39,35 +42,43 @@ class Model: NSObject {
                 name = "Immigrant Song"
                 artist = "Led Zeppelin"
                 album = "Led Zeppelin III"
-                file = "01"
+                cover = UIImage.init(named: "\(0)")!
+                file = "0"
                 break
                 
             case 1:
                 name = "Feel Good Inc."
                 artist = "Gorillaz"
                 album = "Demon Days"
-                file = "02"
+                cover = UIImage.init(named: "\(1)")!
+                file = "1"
                 break
                 
             case 2:
                 name = "Catgroove"
                 artist = "Parov Stelar"
                 album = "Coco"
-                file = "03"
+                cover = UIImage.init(named: "\(2)")!
+                file = "2"
                 break
                 
             case 3:
                 name = "Love Will Tear Us Apart"
                 artist = "Joy Division"
                 album = "The Peel Sessions"
-                file = "04"
+                cover = UIImage.init(named: "\(3)")!
+                file = "3"
                 break
             default:
                 break
             }
-            let  song:Model = Model(title: name, artist: artist, album: album, file: file)
+            let  song:Model = Model(title: name, artist: artist, album: album, cover: cover, file: file)
         
             modelArray.append(song)
+        }
+        
+        modelArray.sort { (a, b) -> Bool in
+            return a.songTitle.compare(b.songTitle) == .orderedAscending
         }
         
         return modelArray

@@ -17,7 +17,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         songCollection = Model.generateModelArray()
     }
 
@@ -25,7 +26,18 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         print(indexPath.row)
         
         let defaults = UserDefaults.standard
-        defaults.set(indexPath.row, forKey: "selectedSong")
+        defaults.set((songCollection[indexPath.row]).songFile, forKey: "selectedSong")
+       
+        
+        var playList:[String] = []
+        
+        for song:Model in songCollection {
+            
+            playList.append(song.songFile)
+        }
+        
+        defaults.set(playList, forKey: "playList")
+        
         defaults.synchronize()
         
         self.performSegue(withIdentifier: "mostraCanzoneSegue", sender: nil)
@@ -40,8 +52,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let riga:Model = songCollection[indexPath.row]
         
-        cell?.textLabel?.text = riga.songTitle
-                cell?.detailTextLabel?.text = riga.songArtist
+        //cell?.textLabel?.text = riga.songTitle
+        //cell?.detailTextLabel?.text = riga.songArtist
+        
+        let cover:UIImageView = cell?.viewWithTag(1) as! UIImageView
+        cover.image = riga.songCover
+        
+        let title:UILabel = cell?.viewWithTag(2) as! UILabel
+        title.text = riga.songTitle
+        
+        let artist:UILabel = cell?.viewWithTag(3) as! UILabel
+        artist.text = riga.songArtist
         
         return cell!
     }
