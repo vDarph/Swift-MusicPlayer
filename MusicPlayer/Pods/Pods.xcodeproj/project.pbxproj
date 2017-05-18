@@ -7,33 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1609185DDA35C58BFD5D77850418FD05 /* Pods-MusicPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1B990C0C0D51CE7B80C97E30C8829 /* Pods-MusicPlayer-dummy.m */; };
-		C279029681ECC13564DE6AF5F061BD23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		D04ECE65E009A2B9E8522D01AF544C47 /* Pods-MusicPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7839BC9159F05A6433038F67111007E7 /* Pods-MusicPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1550C6C361FBA7208F0B738512FBCCC3 /* HGCircularSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9515F1D4635905B16C0C7AF9DB864136 /* HGCircularSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1597858000151DFE51048808DC015699 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1B114863B20A9893526901CFE2856CFC /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C970EF2977353005EF2E7A8664D47CB2 /* CircularSlider.swift */; };
+		31A2EE7DBB31D7967B151D695F500E99 /* Pods-MusicPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1B990C0C0D51CE7B80C97E30C8829 /* Pods-MusicPlayer-dummy.m */; };
+		65858F1110663D16571A8D09DA44D083 /* RangeCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85479D1B8237FCF057B16E87609E0A33 /* RangeCircularSlider.swift */; };
+		6BE505927395C429187B2583F886B7DA /* MidPointCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A489361CBC1A264C98912BE4BA8138 /* MidPointCircularSlider.swift */; };
+		88306CDC00A64BA06ADD733273ABDB63 /* CircularSliderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F80D8409C9B3C5133D26EB2E17E75 /* CircularSliderHelper.swift */; };
+		9DC55328F8A1E058C750001F4183FF31 /* HGCircularSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E69663721F03E0FC6CEE11919ACF487D /* HGCircularSlider-dummy.m */; };
+		CB76FD204CF16A6341F155770230BCCE /* Pods-MusicPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7839BC9159F05A6433038F67111007E7 /* Pods-MusicPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8849847BFAD612B90C207E52CFD1478 /* CircularSlider+Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790A3CEA9CC9BDD1BFEF331D5EBB60E0 /* CircularSlider+Draw.swift */; };
+		FE0F589BBF679AA4CAA890D9365C8442 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24A360DE493CB80C8048F45C14F5B376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01E9FE51F89215D0FFFCF2A90DD7B4B8;
+			remoteInfo = HGCircularSlider;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0D891AC844AA7957A05AA3892F538E79 /* Pods-MusicPlayer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MusicPlayer-frameworks.sh"; sourceTree = "<group>"; };
 		205D535DDD9B480F92A9F65F0CFEE2FD /* Pods-MusicPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MusicPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		23F0CAEB6C469CE87850BC2B2F6DAC50 /* HGCircularSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HGCircularSlider.modulemap; sourceTree = "<group>"; };
+		254DF51F70C7AC32AB98CC491686C604 /* HGCircularSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HGCircularSlider.xcconfig; sourceTree = "<group>"; };
 		2DC1B990C0C0D51CE7B80C97E30C8829 /* Pods-MusicPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MusicPlayer-dummy.m"; sourceTree = "<group>"; };
+		306BAD5DA6FC877DEEDE1D0FC6412B40 /* Pods_MusicPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MusicPlayer.framework; path = "Pods-MusicPlayer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		381C60E938455CC235C902C44ABC0D74 /* Pods-MusicPlayer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MusicPlayer-acknowledgements.plist"; sourceTree = "<group>"; };
 		4444DD423DE81B64C6700A364DC71EE9 /* Pods-MusicPlayer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MusicPlayer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		471008D0805586845C56053A82776EBC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7E056A77372A668E90FB412FF9ED62 /* HGCircularSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGCircularSlider-prefix.pch"; sourceTree = "<group>"; };
+		5A2F80D8409C9B3C5133D26EB2E17E75 /* CircularSliderHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularSliderHelper.swift; path = HGCircularSlider/Classes/CircularSliderHelper.swift; sourceTree = "<group>"; };
 		705AB26147D0F18DD46292CE66DB6F4D /* Pods-MusicPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MusicPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		7839BC9159F05A6433038F67111007E7 /* Pods-MusicPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MusicPlayer-umbrella.h"; sourceTree = "<group>"; };
+		790A3CEA9CC9BDD1BFEF331D5EBB60E0 /* CircularSlider+Draw.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CircularSlider+Draw.swift"; path = "HGCircularSlider/Classes/CircularSlider+Draw.swift"; sourceTree = "<group>"; };
+		85479D1B8237FCF057B16E87609E0A33 /* RangeCircularSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeCircularSlider.swift; path = HGCircularSlider/Classes/RangeCircularSlider.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9515F1D4635905B16C0C7AF9DB864136 /* HGCircularSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGCircularSlider-umbrella.h"; sourceTree = "<group>"; };
 		A7970CBD6974E569925E88C52A701B27 /* Pods-MusicPlayer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MusicPlayer-resources.sh"; sourceTree = "<group>"; };
-		B812CCA3A2A9C1FD13C428E39A5C5931 /* Pods_MusicPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MusicPlayer.framework; path = "Pods-MusicPlayer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A489361CBC1A264C98912BE4BA8138 /* MidPointCircularSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MidPointCircularSlider.swift; path = HGCircularSlider/Classes/MidPointCircularSlider.swift; sourceTree = "<group>"; };
 		C47DC56B949B89ECD438DD5150F63EF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C970EF2977353005EF2E7A8664D47CB2 /* CircularSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularSlider.swift; path = HGCircularSlider/Classes/CircularSlider.swift; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CDCAECED542F97DBDBE65EC29E63DC12 /* HGCircularSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HGCircularSlider.framework; path = HGCircularSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2B94B56A7AF48602E71F7F454503C9 /* Pods-MusicPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MusicPlayer.modulemap"; sourceTree = "<group>"; };
+		E69663721F03E0FC6CEE11919ACF487D /* HGCircularSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HGCircularSlider-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E3D20A0D7C898CCA62482CA8969BEFF1 /* Frameworks */ = {
+		31D0B72B84DCBAF230D4A8CE55E8DEFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C279029681ECC13564DE6AF5F061BD23 /* Foundation.framework in Frameworks */,
+				FE0F589BBF679AA4CAA890D9365C8442 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C17D400707D40FFC2487140453E686D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1597858000151DFE51048808DC015699 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +96,51 @@
 			path = "Target Support Files/Pods-MusicPlayer";
 			sourceTree = "<group>";
 		};
+		083097D7D1CB4E03BC65808E9E1A41FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDCAECED542F97DBDBE65EC29E63DC12 /* HGCircularSlider.framework */,
+				306BAD5DA6FC877DEEDE1D0FC6412B40 /* Pods_MusicPlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3322541322DCCC1DB9249064C30DE829 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DD99463E6F90422ACFE7492C920FC55 /* HGCircularSlider */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52FE24C46760021674EBCB4900E65744 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				23F0CAEB6C469CE87850BC2B2F6DAC50 /* HGCircularSlider.modulemap */,
+				254DF51F70C7AC32AB98CC491686C604 /* HGCircularSlider.xcconfig */,
+				E69663721F03E0FC6CEE11919ACF487D /* HGCircularSlider-dummy.m */,
+				4A7E056A77372A668E90FB412FF9ED62 /* HGCircularSlider-prefix.pch */,
+				9515F1D4635905B16C0C7AF9DB864136 /* HGCircularSlider-umbrella.h */,
+				471008D0805586845C56053A82776EBC /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HGCircularSlider";
+			sourceTree = "<group>";
+		};
+		5DD99463E6F90422ACFE7492C920FC55 /* HGCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				C970EF2977353005EF2E7A8664D47CB2 /* CircularSlider.swift */,
+				790A3CEA9CC9BDD1BFEF331D5EBB60E0 /* CircularSlider+Draw.swift */,
+				5A2F80D8409C9B3C5133D26EB2E17E75 /* CircularSliderHelper.swift */,
+				C2A489361CBC1A264C98912BE4BA8138 /* MidPointCircularSlider.swift */,
+				85479D1B8237FCF057B16E87609E0A33 /* RangeCircularSlider.swift */,
+				52FE24C46760021674EBCB4900E65744 /* Support Files */,
+			);
+			name = HGCircularSlider;
+			path = HGCircularSlider;
+			sourceTree = "<group>";
+		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,7 +154,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D8A1246D6B7A4271202025169F2FE8B0 /* Products */,
+				3322541322DCCC1DB9249064C30DE829 /* Pods */,
+				083097D7D1CB4E03BC65808E9E1A41FF /* Products */,
 				ED1C26A3EF77B9481535BCE362D34DFB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -82,14 +166,6 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D8A1246D6B7A4271202025169F2FE8B0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B812CCA3A2A9C1FD13C428E39A5C5931 /* Pods_MusicPlayer.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		ED1C26A3EF77B9481535BCE362D34DFB /* Targets Support Files */ = {
@@ -103,32 +179,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		EF8077E9F14011FCB0C7F925F487F662 /* Headers */ = {
+		09B6260172998B75AD9C01C3C3621B00 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D04ECE65E009A2B9E8522D01AF544C47 /* Pods-MusicPlayer-umbrella.h in Headers */,
+				CB76FD204CF16A6341F155770230BCCE /* Pods-MusicPlayer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9958A019875AA1140DD011A74E32915 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1550C6C361FBA7208F0B738512FBCCC3 /* HGCircularSlider-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BAD45A07550D94E8F9912283760F057B /* Pods-MusicPlayer */ = {
+		01E9FE51F89215D0FFFCF2A90DD7B4B8 /* HGCircularSlider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1ACDB09EB6241C3D03991A7C9CC6D543 /* Build configuration list for PBXNativeTarget "Pods-MusicPlayer" */;
+			buildConfigurationList = DF65F202387C67D48E19F90D5E2680A8 /* Build configuration list for PBXNativeTarget "HGCircularSlider" */;
 			buildPhases = (
-				1EDC252B2210136D60726D29DECA8468 /* Sources */,
-				E3D20A0D7C898CCA62482CA8969BEFF1 /* Frameworks */,
-				EF8077E9F14011FCB0C7F925F487F662 /* Headers */,
+				B4BA766D90FD0D5CEEAFF685DF2499EB /* Sources */,
+				8C17D400707D40FFC2487140453E686D /* Frameworks */,
+				F9958A019875AA1140DD011A74E32915 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = HGCircularSlider;
+			productName = HGCircularSlider;
+			productReference = CDCAECED542F97DBDBE65EC29E63DC12 /* HGCircularSlider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7D42102EDCB0B29A6CA912B3A5FFC96 /* Pods-MusicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED438DC3BA092FDAD2BAD4B3306E3008 /* Build configuration list for PBXNativeTarget "Pods-MusicPlayer" */;
+			buildPhases = (
+				18433C5E45C5857F98C8C94844AEAB8C /* Sources */,
+				31D0B72B84DCBAF230D4A8CE55E8DEFE /* Frameworks */,
+				09B6260172998B75AD9C01C3C3621B00 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D1642BC570C84C7EA7F437655C3E5FB /* PBXTargetDependency */,
+			);
 			name = "Pods-MusicPlayer";
 			productName = "Pods-MusicPlayer";
-			productReference = B812CCA3A2A9C1FD13C428E39A5C5931 /* Pods_MusicPlayer.framework */;
+			productReference = 306BAD5DA6FC877DEEDE1D0FC6412B40 /* Pods_MusicPlayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,28 +250,116 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D8A1246D6B7A4271202025169F2FE8B0 /* Products */;
+			productRefGroup = 083097D7D1CB4E03BC65808E9E1A41FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BAD45A07550D94E8F9912283760F057B /* Pods-MusicPlayer */,
+				01E9FE51F89215D0FFFCF2A90DD7B4B8 /* HGCircularSlider */,
+				D7D42102EDCB0B29A6CA912B3A5FFC96 /* Pods-MusicPlayer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1EDC252B2210136D60726D29DECA8468 /* Sources */ = {
+		18433C5E45C5857F98C8C94844AEAB8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1609185DDA35C58BFD5D77850418FD05 /* Pods-MusicPlayer-dummy.m in Sources */,
+				31A2EE7DBB31D7967B151D695F500E99 /* Pods-MusicPlayer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4BA766D90FD0D5CEEAFF685DF2499EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8849847BFAD612B90C207E52CFD1478 /* CircularSlider+Draw.swift in Sources */,
+				1B114863B20A9893526901CFE2856CFC /* CircularSlider.swift in Sources */,
+				88306CDC00A64BA06ADD733273ABDB63 /* CircularSliderHelper.swift in Sources */,
+				9DC55328F8A1E058C750001F4183FF31 /* HGCircularSlider-dummy.m in Sources */,
+				6BE505927395C429187B2583F886B7DA /* MidPointCircularSlider.swift in Sources */,
+				65858F1110663D16571A8D09DA44D083 /* RangeCircularSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9D1642BC570C84C7EA7F437655C3E5FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HGCircularSlider;
+			target = 01E9FE51F89215D0FFFCF2A90DD7B4B8 /* HGCircularSlider */;
+			targetProxy = 24A360DE493CB80C8048F45C14F5B376 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		18DB458E6E6C39AC8C3319675281A848 /* Debug */ = {
+		2B1A8C97EC200D7001F69BC344857EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254DF51F70C7AC32AB98CC491686C604 /* HGCircularSlider.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HGCircularSlider/HGCircularSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HGCircularSlider/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HGCircularSlider/HGCircularSlider.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HGCircularSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3674433CCCE91E6208601DCA5FB7123B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254DF51F70C7AC32AB98CC491686C604 /* HGCircularSlider.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HGCircularSlider/HGCircularSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HGCircularSlider/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HGCircularSlider/HGCircularSlider.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HGCircularSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E9090543CB56158A6EE592697933441 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 705AB26147D0F18DD46292CE66DB6F4D /* Pods-MusicPlayer.debug.xcconfig */;
 			buildSettings = {
@@ -198,6 +388,7 @@
 				PRODUCT_NAME = Pods_MusicPlayer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -244,7 +435,7 @@
 			};
 			name = Release;
 		};
-		B6E639A552AA3FFCDC2B66F34127B35E /* Release */ = {
+		C34188183F3BAA5084A0527AE795E1D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 205D535DDD9B480F92A9F65F0CFEE2FD /* Pods-MusicPlayer.release.xcconfig */;
 			buildSettings = {
@@ -326,20 +517,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1ACDB09EB6241C3D03991A7C9CC6D543 /* Build configuration list for PBXNativeTarget "Pods-MusicPlayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18DB458E6E6C39AC8C3319675281A848 /* Debug */,
-				B6E639A552AA3FFCDC2B66F34127B35E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
 				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF65F202387C67D48E19F90D5E2680A8 /* Build configuration list for PBXNativeTarget "HGCircularSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1A8C97EC200D7001F69BC344857EB4 /* Debug */,
+				3674433CCCE91E6208601DCA5FB7123B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED438DC3BA092FDAD2BAD4B3306E3008 /* Build configuration list for PBXNativeTarget "Pods-MusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E9090543CB56158A6EE592697933441 /* Debug */,
+				C34188183F3BAA5084A0527AE795E1D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

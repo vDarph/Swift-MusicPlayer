@@ -7,4 +7,6 @@ target 'MusicPlayer' do
 
   # Pods for MusicPlayer
 
+pod 'HGCircularSlider', '~> 2.0.0'
+
 end

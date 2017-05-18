@@ -18,8 +18,6 @@ public class SliderKit : NSObject {
     //// Cache
 
     private struct Cache {
-        static let whiteColor: UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.000)
-        static let blackColor: UIColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1.000)
         static let darkBlueColor: UIColor = UIColor(red: 0.329, green: 0.408, blue: 0.565, alpha: 1.000)
         static let darkPinkColor: UIColor = UIColor(red: 0.824, green: 0.390, blue: 0.382, alpha: 1.000)
     }
@@ -28,8 +26,6 @@ public class SliderKit : NSObject {
 
     public dynamic class var darkBlueColor: UIColor { return Cache.darkBlueColor }
     public dynamic class var darkPinkColor: UIColor { return Cache.darkPinkColor }
-    public dynamic class var whiteColor: UIColor { return Cache.whiteColor }
-    public dynamic class var blackColor: UIColor { return Cache.blackColor }
 
     //// Drawing Methods
 

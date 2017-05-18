@@ -20,6 +20,7 @@
 		1F94AF971EBA36C800F00790 /* PRGRoundSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F94AF941EBA36C700F00790 /* PRGRoundSlider.swift */; };
 		1F94AF981EBA36C800F00790 /* SliderKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F94AF951EBA36C700F00790 /* SliderKit.swift */; };
 		1FCDA7ED1EA76141001D56F9 /* 0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FCDA7EC1EA76141001D56F9 /* 0.mp3 */; };
+		1FD5A9A41ECDA4F000D0EF15 /* HGCircularSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD5A9A31ECDA4F000D0EF15 /* HGCircularSlider.framework */; };
 		1FE69F3E1EB0C2D80031B15E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F3D1EB0C2D80031B15E /* Assets.xcassets */; };
 		1FE69F401EB0CCD80031B15E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE69F3F1EB0CCD80031B15E /* MediaPlayer.framework */; };
 		1FE69F4A1EB0F6FA0031B15E /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FE69F471EB0F6FA0031B15E /* 1.mp3 */; };
@@ -67,6 +68,7 @@
 		1F94AF951EBA36C700F00790 /* SliderKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderKit.swift; sourceTree = "<group>"; };
 		1FCDA7EC1EA76141001D56F9 /* 0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 0.mp3; path = Assets.xcassets/0.mp3; sourceTree = "<group>"; };
 		1FCDA7F01EA77323001D56F9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1FD5A9A31ECDA4F000D0EF15 /* HGCircularSlider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HGCircularSlider.framework; path = "../../Library/Developer/Xcode/DerivedData/MusicPlayer-bnedgxrqzvbtwedkfrhqybgkency/Build/Products/Debug-iphonesimulator/HGCircularSlider/HGCircularSlider.framework"; sourceTree = "<group>"; };
 		1FE69F3D1EB0C2D80031B15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FE69F3F1EB0CCD80031B15E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1FE69F471EB0F6FA0031B15E /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 1.mp3; path = Assets.xcassets/1.mp3; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD5A9A41ECDA4F000D0EF15 /* HGCircularSlider.framework in Frameworks */,
 				1FE69F401EB0CCD80031B15E /* MediaPlayer.framework in Frameworks */,
 				21CC79204A3638C126BE8B81 /* Pods_MusicPlayer.framework in Frameworks */,
 			);
@@ -167,6 +170,7 @@
 		1F760E471EA627C400E27509 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FD5A9A31ECDA4F000D0EF15 /* HGCircularSlider.framework */,
 				1F94AF251EBA153800F00790 /* PRGRoundSlider */,
 				1FE69F3F1EB0CCD80031B15E /* MediaPlayer.framework */,
 				1F760E481EA627C400E27509 /* AVFoundation.framework */,

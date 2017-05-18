@@ -8,11 +8,13 @@
 
 import UIKit
 import AVFoundation
+import  	HGCircularSlider
 
 class ViewController: UIViewController {
     
     var audioPlayer:AVAudioPlayer = AVAudioPlayer()
     
+    @IBOutlet weak var circularSlider: CircularSlider!
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var pauseBtn: UIButton!
     @IBOutlet weak var timeSlider: UISlider!
@@ -22,11 +24,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentTime: UILabel!
     @IBOutlet weak var totalTime: UILabel!
     @IBOutlet weak var backgroundImg: UIImageView!
-    @IBOutlet weak var sliderContainerView: UIView!
     
     var sliderView:PRGRoundSlider?
     
     var songCollection = [Model()]
+    
+    var numberOfRounds: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,15 +65,14 @@ class ViewController: UIViewController {
         //set background image
         backgroundImg.image = song.songCover
         
+        //description elements
         descriptionTitle.text = song.songTitle
         descriptionArtist.text = song.songArtist
         descriptionCover.image = song.songCover
         
-        /*descriptionCover.layer.borderWidth = 1
-        descriptionCover.layer.masksToBounds = false
-        descriptionCover.layer.borderColor = UIColor.black.cgColor
-        descriptionCover.layer.cornerRadius = descriptionCover.frame.height/2
-        descriptionCover.clipsToBounds = true*/
+        //round thumbnail corners
+        descriptionCover.layer.cornerRadius = descriptionCover.frame.size.width/2
+        descriptionCover.clipsToBounds = true
         
         //UILabel for song duration
         let minuti:Int = Int(audioPlayer.duration)/60
@@ -79,10 +81,10 @@ class ViewController: UIViewController {
         let sec = secondi < 10 ? "0\(secondi)" : "\(secondi)"
         totalTime.text = "\(min):\(sec)"
         
-        setupSliderProgrammatically(startText: "00:00", endText:totalTime.text!)
-        
         //set UISlider to match song duration
         timeSlider.maximumValue = Float(audioPlayer.duration)
+        
+        circularSlider.maximumValue = CGFloat(audioPlayer.duration)
         
         //link update function to UISlider
         _ = Timer.scheduledTimer(timeInterval: 0.1, target:self, selector: #selector(ViewController.updateTimeSlider), userInfo: nil, repeats: true)
@@ -92,6 +94,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         
         
     }
@@ -119,27 +122,6 @@ class ViewController: UIViewController {
         }
     }
     
-    func setupSliderProgrammatically(startText:String, endText:String){
-        sliderView = PRGRoundSlider(
-            frame: sliderContainerView.bounds,
-            value: 0.5,
-            strokeColor: SliderKit.darkBlueColor,
-            strokeWidth: 3,
-            gradientColor: SliderKit.darkPinkColor,
-            startAngle: 210,
-            endAngle: -30,
-            startText: startText,
-            endText: endText)
-        { (value) in
-            return "\(Int(value*100))%"
-        }
-        
-        
-        sliderContainerView.addSubview(sliderView!)
-        
-    }
-
-    
     //press button to play
     @IBAction func playButton(_ sender: Any) {
         audioPlayer.play()
@@ -152,6 +134,10 @@ class ViewController: UIViewController {
         switchAudioStatusBtn()
     }
     
+    @IBAction func circularSliderTime(_ sender: Any) {
+        audioPlayer.currentTime = TimeInterval(circularSlider.endPointValue)
+    }
+    
     //UISlider gets song currentTime
     @IBAction func timeSlider(_ sender: Any) {
         audioPlayer.currentTime = TimeInterval(timeSlider.value)
@@ -160,8 +146,7 @@ class ViewController: UIViewController {
     //update UISlider status while song is playing
     func updateTimeSlider() {
         timeSlider.value = Float(audioPlayer.currentTime)
-       // sliderView!.value =  (CGFloat(audioPlayer.currentTime)/100)/CGFloat(audioPlayer.duration)
-        
+        circularSlider.endPointValue = CGFloat(audioPlayer.currentTime)
         //set current time on the UILabel in "mm:ss"
         let minuti:Int = Int(audioPlayer.currentTime)/60
         let secondi:Int = Int(audioPlayer.currentTime)%60
